@@ -1,0 +1,123 @@
+make all
+make[1]: Entering directory `/local/home/kimoto/source/byte-benchmarks3.1'
+Checking distribution of files
+./pgms  exists
+./src  exists
+./testdir  exists
+./doc  exists
+./tmp  exists
+./results  exists
+make[1]: Leaving directory `/local/home/kimoto/source/byte-benchmarks3.1'
+
+         ############   #####        ## ############### ###############
+         ############## #####        ## ############### ###############
+         #####       ## #####        ##      #####      #####         
+         #####       ## #####        ##      #####      #####         
+         #####       ## #####        ##      #####      #####         
+         ############   #####       ##       #####      ###############
+         #############   ######### ##        #####      ###############
+         #####       ##   ##########         #####      #####         
+         #####       ##      #####           #####      #####         
+         #####       ##      #####           #####      #####         
+         #####       ##      #####           #####      #####         
+         ##############      #####           #####      ###############
+         ############        #####           #####      ###############
+
+
+   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+
+
+Dhrystone 2 without register variables  1 2 3 4 5 6
+
+Dhrystone 2 using register variables  1 2 3 4 5 6
+
+Arithmetic Test (type = arithoh)  1 2 3 4 5 6
+
+Arithmetic Test (type = register)  1 2 3 4 5 6
+
+Arithmetic Test (type = short)  1 2 3 4 5 6
+
+Arithmetic Test (type = int)  1 2 3 4 5 6
+
+Arithmetic Test (type = long)  1 2 3 4 5 6
+
+Arithmetic Test (type = float)  1 2 3 4 5 6
+
+Arithmetic Test (type = double)  1 2 3 4 5 6
+
+System Call Overhead Test  1 2 3 4 5 6
+
+Pipe Throughput Test  1 2 3 4 5 6
+
+Pipe-based Context Switching Test  1 2 3 4 5 6
+
+Process Creation Test  1 2 3 4 5 6
+
+Execl Throughput Test  1 2 3 4 5 6
+
+Filesystem Throughput Test (10 second test)  1 2 3 4 5 6
+Filesystem Throughput Test (30 second test)  1 2 3 4 5 6
+
+C Compiler Test  1 2 3
+
+Shell scripts (1 concurrent)  1 2 3
+Shell scripts (2 concurrent)  1 2 3
+Shell scripts (4 concurrent)  1 2 3
+Shell scripts (8 concurrent)  1 2 3
+
+Dc: sqrt(2) to 99 decimal places  1 2 3 4 5 6
+
+Recursion Test--Tower of Hanoi  1 2 3 4 5 6
+
+==============================================================
+
+  BYTE UNIX Benchmarks (Version 3.11)
+  System -- eos.ohnolab.org
+  Start Benchmark Run: Thu Apr  2 23:57:03 JST 1998
+   4 interactive users.
+Dhrystone 2 without register variables   331329.7 lps   (10 secs, 6 samples)
+Dhrystone 2 using register variables     332632.6 lps   (10 secs, 6 samples)
+Arithmetic Test (type = arithoh)         1227253.3 lps   (10 secs, 6 samples)
+Arithmetic Test (type = register)         72764.4 lps   (10 secs, 6 samples)
+Arithmetic Test (type = short)            41231.3 lps   (10 secs, 6 samples)
+Arithmetic Test (type = int)              72764.5 lps   (10 secs, 6 samples)
+Arithmetic Test (type = long)             72748.7 lps   (10 secs, 6 samples)
+Arithmetic Test (type = float)            83430.5 lps   (10 secs, 6 samples)
+Arithmetic Test (type = double)           83412.4 lps   (10 secs, 6 samples)
+System Call Overhead Test                135543.2 lps   (10 secs, 6 samples)
+Pipe Throughput Test                      97610.6 lps   (10 secs, 6 samples)
+Pipe-based Context Switching Test         22027.9 lps   (10 secs, 6 samples)
+Process Creation Test                       776.8 lps   (10 secs, 6 samples)
+Execl Throughput Test                       471.3 lps   (9 secs, 6 samples)
+File Read  (10 seconds)                  252895.0 KBps  (10 secs, 6 samples)
+File Write (10 seconds)                    3200.0 KBps  (10 secs, 6 samples)
+File Copy  (10 seconds)                    2694.0 KBps  (10 secs, 6 samples)
+File Read  (30 seconds)                  254191.0 KBps  (30 secs, 6 samples)
+File Write (30 seconds)                    3077.0 KBps  (30 secs, 6 samples)
+File Copy  (30 seconds)                    2628.0 KBps  (30 secs, 6 samples)
+C Compiler Test                             170.5 lpm   (60 secs, 3 samples)
+Shell scripts (1 concurrent)                260.0 lpm   (60 secs, 3 samples)
+Shell scripts (2 concurrent)                145.0 lpm   (60 secs, 3 samples)
+Shell scripts (4 concurrent)                 76.0 lpm   (60 secs, 3 samples)
+Shell scripts (8 concurrent)                 27.0 lpm   (60 secs, 3 samples)
+Dc: sqrt(2) to 99 decimal places           9458.4 lpm   (60 secs, 6 samples)
+Recursion Test--Tower of Hanoi             6574.2 lps   (10 secs, 6 samples)
+
+
+                     INDEX VALUES            
+TEST                                        BASELINE     RESULT      INDEX
+
+Arithmetic Test (type = double)               2541.7    83412.4       32.8
+Dhrystone 2 without register variables       22366.3   331329.7       14.8
+Execl Throughput Test                           16.5      471.3       28.6
+File Copy  (30 seconds)                        179.0     2628.0       14.7
+Pipe-based Context Switching Test             1318.5    22027.9       16.7
+Shell scripts (8 concurrent)                     4.0       27.0        6.8
+                                                                 =========
+     SUM of  6 items                                                 114.3
+     AVERAGE                                                          19.1

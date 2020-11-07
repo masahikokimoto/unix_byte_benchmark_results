@@ -1,0 +1,46 @@
+
+  BYTE UNIX Benchmarks (Version 3.11)
+  System -- aurora.ecs.ohnolab.org
+  Start Benchmark Run: Sat May 12 21:35:42 JST 2001
+   1 interactive users.
+Dhrystone 2 without register variables   567007.8 lps   (10 secs, 6 samples)
+Dhrystone 2 using register variables     563339.6 lps   (10 secs, 6 samples)
+Arithmetic Test (type = arithoh)         2081036.3 lps   (10 secs, 6 samples)
+Arithmetic Test (type = register)        123410.0 lps   (10 secs, 6 samples)
+Arithmetic Test (type = short)            69894.3 lps   (10 secs, 6 samples)
+Arithmetic Test (type = int)             123424.6 lps   (10 secs, 6 samples)
+Arithmetic Test (type = long)            123419.8 lps   (10 secs, 6 samples)
+Arithmetic Test (type = float)           141509.5 lps   (10 secs, 6 samples)
+Arithmetic Test (type = double)          141506.7 lps   (10 secs, 6 samples)
+System Call Overhead Test                230453.9 lps   (10 secs, 6 samples)
+Pipe Throughput Test                     176805.5 lps   (10 secs, 6 samples)
+Pipe-based Context Switching Test         28854.7 lps   (10 secs, 6 samples)
+Process Creation Test                      1095.8 lps   (10 secs, 6 samples)
+Execl Throughput Test                       652.9 lps   (9 secs, 6 samples)
+File Read  (10 seconds)                  465144.0 KBps  (10 secs, 6 samples)
+File Write (10 seconds)                    3866.0 KBps  (10 secs, 6 samples)
+File Copy  (10 seconds)                    2652.0 KBps  (10 secs, 6 samples)
+File Read  (30 seconds)                  465609.0 KBps  (30 secs, 6 samples)
+File Write (30 seconds)                    3744.0 KBps  (30 secs, 6 samples)
+File Copy  (30 seconds)                    2428.0 KBps  (30 secs, 6 samples)
+C Compiler Test                             357.9 lpm   (60 secs, 3 samples)
+Shell scripts (1 concurrent)                544.6 lpm   (60 secs, 3 samples)
+Shell scripts (2 concurrent)                291.6 lpm   (60 secs, 3 samples)
+Shell scripts (4 concurrent)                135.3 lpm   (60 secs, 3 samples)
+Shell scripts (8 concurrent)                 72.3 lpm   (60 secs, 3 samples)
+Dc: sqrt(2) to 99 decimal places          13371.9 lpm   (60 secs, 6 samples)
+Recursion Test--Tower of Hanoi            11451.3 lps   (10 secs, 6 samples)
+
+
+                     INDEX VALUES            
+TEST                                        BASELINE     RESULT      INDEX
+
+Arithmetic Test (type = double)               2541.7   141506.7       55.7
+Dhrystone 2 without register variables       22366.3   567007.8       25.4
+Execl Throughput Test                           16.5      652.9       39.6
+File Copy  (30 seconds)                        179.0     2428.0       13.6
+Pipe-based Context Switching Test             1318.5    28854.7       21.9
+Shell scripts (8 concurrent)                     4.0       72.3       18.1
+                                                                 =========
+     SUM of  6 items                                                 174.1
+     AVERAGE                                                          29.0

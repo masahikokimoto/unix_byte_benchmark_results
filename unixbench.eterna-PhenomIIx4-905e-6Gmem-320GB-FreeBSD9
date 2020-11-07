@@ -1,0 +1,55 @@
+
+  BYTE UNIX Benchmarks (Version 4.1.0)
+  System -- eterna.earthlight.jp
+  Start Benchmark Run: Mon May  2 15:33:55 JST 2011
+   1 interactive users.
+   3:33PM  up 10 mins, 1 user, load averages: 0.00, 0.09, 0.09
+  -r-xr-xr-x  1 root  wheel  116288 Mar  6 07:58 /bin/sh
+  /bin/sh: ELF 32-bit LSB executable, Intel 80386, version 1 (FreeBSD), dynamically linked (uses shared libs), for FreeBSD 9.0 (900033), stripped
+  /dev/ad4s1d    81245672 26243730 48502290    35%    /usr
+Dhrystone 2 using register variables     9453541.7 lps   (10.0 secs, 10 samples)
+Double-Precision Whetstone                 1964.1 MWIPS (10.0 secs, 10 samples)
+System Call Overhead                     886709.0 lps   (10.0 secs, 10 samples)
+Pipe Throughput                          1271176.0 lps   (10.0 secs, 10 samples)
+Pipe-based Context Switching             175133.8 lps   (10.0 secs, 10 samples)
+Process Creation                           7444.5 lps   (30.0 secs, 3 samples)
+Execl Throughput                           2945.9 lps   (29.9 secs, 3 samples)
+File Read 1024 bufsize 2000 maxblocks    1089491.0 KBps  (30.0 secs, 3 samples)
+File Write 1024 bufsize 2000 maxblocks   108044.0 KBps  (30.0 secs, 3 samples)
+File Copy 1024 bufsize 2000 maxblocks    107942.0 KBps  (30.0 secs, 3 samples)
+File Read 256 bufsize 500 maxblocks      294296.0 KBps  (30.0 secs, 3 samples)
+File Write 256 bufsize 500 maxblocks     127526.0 KBps  (30.0 secs, 3 samples)
+File Copy 256 bufsize 500 maxblocks      104593.0 KBps  (30.0 secs, 3 samples)
+File Read 4096 bufsize 8000 maxblocks    2269635.0 KBps  (30.0 secs, 3 samples)
+File Write 4096 bufsize 8000 maxblocks    71910.0 KBps  (30.0 secs, 3 samples)
+File Copy 4096 bufsize 8000 maxblocks     70662.0 KBps  (30.0 secs, 3 samples)
+Shell Scripts (1 concurrent)               3552.1 lpm   (60.0 secs, 3 samples)
+Shell Scripts (8 concurrent)               1278.3 lpm   (60.0 secs, 3 samples)
+Shell Scripts (16 concurrent)               687.0 lpm   (60.0 secs, 3 samples)
+Arithmetic Test (type = short)           634101.2 lps   (10.0 secs, 3 samples)
+Arithmetic Test (type = int)             650744.7 lps   (10.0 secs, 3 samples)
+Arithmetic Test (type = long)            650274.2 lps   (10.0 secs, 3 samples)
+Arithmetic Test (type = float)           1238897.4 lps   (10.0 secs, 3 samples)
+Arithmetic Test (type = double)          1239210.9 lps   (10.0 secs, 3 samples)
+Arithoh                                       nan lps   (10.0 secs, 3 samples)
+C Compiler Throughput                      1636.3 lpm   (60.0 secs, 3 samples)
+Dc: sqrt(2) to 99 decimal places         191863.0 lpm   (30.0 secs, 3 samples)
+Recursion Test--Tower of Hanoi           151922.0 lps   (20.0 secs, 3 samples)
+
+
+                     INDEX VALUES            
+TEST                                        BASELINE     RESULT      INDEX
+
+Dhrystone 2 using register variables        116700.0  9453541.7      810.1
+Double-Precision Whetstone                      55.0     1964.1      357.1
+Execl Throughput                                43.0     2945.9      685.1
+File Copy 1024 bufsize 2000 maxblocks         3960.0   107942.0      272.6
+File Copy 256 bufsize 500 maxblocks           1655.0   104593.0      632.0
+File Copy 4096 bufsize 8000 maxblocks         5800.0    70662.0      121.8
+Pipe Throughput                              12440.0  1271176.0     1021.8
+Pipe-based Context Switching                  4000.0   175133.8      437.8
+Process Creation                               126.0     7444.5      590.8
+Shell Scripts (8 concurrent)                     6.0     1278.3     2130.5
+System Call Overhead                         15000.0   886709.0      591.1
+                                                                 =========
+     FINAL SCORE                                                     549.7
